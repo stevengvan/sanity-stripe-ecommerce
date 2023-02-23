@@ -13,6 +13,9 @@ For loading custom products and testing the Stripe platform, an `env` file will 
 The Stripe checkout page will only be used in test mode to allow dummy data in the checkout forms. This does not require accurate info which includes the email, name on the card, and the ZIP and country or region.
 
 For the card information, use the following values to fill the fields:
+
 <ins>Card number</ins>: 4242 4242 4242 4242
+
 <ins>Expiry</ins>: 04/24
+
 <ins>CVC</ins>: 424
