@@ -27,6 +27,7 @@ const ProductDetails = ({ product, products }) => {
             <img
               src={urlFor(image && image[index])}
               className="product-detail-image"
+              alt={`image of ${name}`}
             />
           </div>
           <div className="small-images-container">
@@ -38,6 +39,7 @@ const ProductDetails = ({ product, products }) => {
                   i === index ? "small-image selected-image" : "small-image"
                 }
                 onMouseEnter={() => setIndex(i)}
+                alt={`image ${i} of product`}
               />
             ))}
           </div>
@@ -46,11 +48,11 @@ const ProductDetails = ({ product, products }) => {
           <h1>{name}</h1>
           <div className="reviews">
             <div>
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiOutlineStar />
+              <AiFillStar title="product review filled icon" />
+              <AiFillStar title="product review filled icon" />
+              <AiFillStar title="product review filled icon" />
+              <AiFillStar title="product review filled icon" />
+              <AiOutlineStar title="product review empty icon" />
             </div>
             <p>(20)</p>
           </div>
@@ -62,12 +64,12 @@ const ProductDetails = ({ product, products }) => {
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">
-              <span className="minus" onClick={decQty}>
-                <AiOutlineMinus />
+              <span className="minus" tabIndex={0} onClick={decQty}>
+                <AiOutlineMinus title="decrease product quantity" />
               </span>
               <span className="num">{qty}</span>
-              <span className="plus" onClick={incQty}>
-                <AiOutlinePlus />
+              <span className="plus" tabIndex={0} onClick={incQty}>
+                <AiOutlinePlus title="increase product quantity" />
               </span>
             </p>
           </div>
@@ -91,7 +93,7 @@ const ProductDetails = ({ product, products }) => {
         <div className="marquee">
           <div className="maylike-products-container track">
             {products?.map((item) => (
-              <div key={item._id} onClick={() => setIndex(0)}>
+              <div key={item._id} tabIndex={0} onClick={() => setIndex(0)}>
                 <Product product={item} />
               </div>
             ))}

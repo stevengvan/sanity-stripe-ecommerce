@@ -35,7 +35,7 @@ a {
   font-size: 29px;
   font-weight: 600;
   margin: 60px 0px;
-  color: #f02d34;
+  color: #c01319;
 }
 .marquee {
   position: relative;
@@ -64,16 +64,16 @@ a {
 }
 
 span.text-red {
-  -webkit-text-stroke: 1px #f02d34;
+  -webkit-text-stroke: 1px #c01319;
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: rgb(70, 70, 70);
   font-size: 18px;
 }
 .cart-icon {
   font-size: 25px;
-  color: gray;
+  color: rgb(70, 70, 70);
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -88,7 +88,7 @@ span.text-red {
   right: -8px;
   font-size: 12px;
   color: #eee;
-  background-color: #f02d34;
+  background-color: #c01319;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -110,6 +110,12 @@ span.text-red {
   color: #324d67;
 }
 .product-card:hover {
+  transform: scale(1.1, 1.1);
+}
+.product-card:focus {
+  transform: scale(1.1, 1.1);
+}
+.product-card:focus-visible {
   transform: scale(1.1, 1.1);
 }
 .product-image {
@@ -137,13 +143,13 @@ span.text-red {
   line-height: 0.9;
   width: 100%;
 }
-.hero-banner-container .beats-solo {
+.hero-banner-container .hero-product {
   font-size: 20px;
 }
 .hero-banner-container button {
   border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background-color: #c01319;
   color: white;
   border: none;
   margin-top: 40px;
@@ -158,7 +164,7 @@ span.text-red {
   margin-top: 4px;
 }
 .hero-banner-container h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 10em;
   margin-left: -20px;
   text-transform: uppercase;
@@ -190,7 +196,6 @@ span.text-red {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 16px;
-  /* color: black; */
   align-self: flex-end;
 }
 .products-heading {
@@ -208,7 +213,7 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #c01319;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -242,8 +247,7 @@ span.text-red {
 }
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
+
   top: -25%;
   left: 25%;
   width: 500px;
@@ -270,7 +274,6 @@ span.text-red {
   right: 0;
   top: 0;
   z-index: 100;
-  /* will-change: transform; */
   transition: all 1s ease-in-out;
 }
 .cart-container {
@@ -316,7 +319,7 @@ span.text-red {
 }
 .cart-num-items {
   margin-left: 10px;
-  color: #f02d34;
+  color: #c01319;
 }
 .empty-cart {
   margin: 40px;
@@ -370,7 +373,7 @@ span.text-red {
 }
 .remove-item {
   font-size: 24px;
-  color: #f02d34;
+  color: #c01319;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -397,7 +400,7 @@ span.text-red {
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: #c01319;
   color: #fff;
   cursor: pointer;
   transform: scale(1, 1);
@@ -424,7 +427,7 @@ span.text-red {
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
-  background-color: #f02d34;
+  background-color: #c01319;
 }
 .small-images-container {
   display: flex;
@@ -440,10 +443,10 @@ span.text-red {
 }
 
 .selected-image {
-  background-color: #f02d34;
+  background-color: #c01319;
 }
 .reviews {
-  color: #f02d34;
+  color: #c01319;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -464,7 +467,7 @@ span.text-red {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #f02d34;
+  color: #c01319;
 }
 .price .old-price,
 .product-price .old-price,
@@ -484,12 +487,12 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid #f02d34;
+  border: 1px solid #c01319;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: #c01319;
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
@@ -502,7 +505,7 @@ span.text-red {
   width: 200px;
 
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: #c01319;
   color: white;
   border: none;
   margin-top: 40px;
@@ -526,7 +529,7 @@ span.text-red {
 }
 .quantity-desc .minus {
   border-right: 1px solid gray;
-  color: #f02d34;
+  color: #c01319;
 }
 .quantity-desc .num {
   border-right: 1px solid gray;
@@ -554,7 +557,7 @@ span.text-red {
 }
 .max-qty {
   font-weight: 500;
-  color: #f02d34;
+  color: #c01319;
 }
 .success-wrapper,
 .cancel-wrapper {
@@ -604,7 +607,7 @@ span.text-red {
 }
 .success .description .email {
   margin-left: 5px;
-  color: #f02d34;
+  color: #c01319;
 }
 .product-max-qty {
   margin-top: 10px;

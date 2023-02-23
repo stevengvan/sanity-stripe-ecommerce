@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer-container">
       <p>2022 Pen Store All rights reserved</p>
       <p className="icons">
-        <AiFillInstagram />
-        <AiOutlineTwitter />
+        <AiFillInstagram title="Instagram icon" />
+        <AiOutlineTwitter title="Twitter icon" />
       </p>
     </div>
   );
